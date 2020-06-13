@@ -13,7 +13,9 @@ function App() {
   return (
     <div style={{ height: '100%' }}>
       <Navbar ToggleHandler={ToggleHandler} />
-      {drawerState && <SideDrawer ToggleHandler={ToggleHandler} />}
+
+      <SideDrawer ToggleHandler={ToggleHandler} drawerState={drawerState} />
+
       {drawerState && <Backdrop ToggleHandler={ToggleHandler} />}
       <main style={{ marginTop: 64 }}>
         <p>This is the page content!</p>

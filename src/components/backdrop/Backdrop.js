@@ -1,18 +1,8 @@
 import React from 'react';
+import './backdrop.css';
 
 const Backdrop = ({ ToggleHandler }) => {
-  return (
-    <div
-      style={{
-        postion: 'fixed',
-        width: '100%',
-        height: '100vh',
-        backgroundColor: 'rgba(0,0,0,0.3)',
-        zIndex: 100,
-      }}
-      onClick={ToggleHandler}
-    ></div>
-  );
+  return <div className="backdrop" onClick={ToggleHandler}></div>;
 };
 
 export default Backdrop;
